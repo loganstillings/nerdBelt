@@ -1,0 +1,8 @@
+<h1>Login Page</h1>
+<div class="errors">
+    <p ng-repeat="error in errors track by $index">{{error}}</p>
+</div>
+<form ng-submit='login()'>
+    <input type="text" ng-model="logReg.name" placeholder="Enter your name">
+    <input type="submit" value="Log in">
+</form>

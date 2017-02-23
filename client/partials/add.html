@@ -1,0 +1,13 @@
+<h2>Add Nerd</h2>
+<a href="/logout">Log Out</a>
+<p><a href="/#!/dashboard">Home</a></p>
+<div ng-controller="nerdController">
+    <div class='errors'>
+        <p ng-repeat="error in nerdErrors">{{error}}</p>
+    </div>
+    <form ng-submit="addNerd(nerd)">
+        <p><input type="text" ng-model="nerd.name" placeholder="Nerd Name"></p>
+        <p> <input type="tetxt" ng-model="nerd.power" placeholder="Super Power"></p>
+        <p><input type="submit" value="Add Nerd"></p>
+    </form>
+</div>
